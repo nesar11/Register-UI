@@ -1,0 +1,55 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-button> Click me</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div>
+  <div>
+    <div>Register </div>
+    <form [formGroup] = "registerForm">
+      <div>
+        <mat-form-field>
+        <input id="name"
+               matInput
+               formControlName="name"
+               placeholder="Name" />
+        </mat-form-field>
+        <mat-form-field>
+          <input id="email"
+                 matInput
+                 formControlName="email"
+                 placeholder="Email" />
+        </mat-form-field>
+        <mat-form-field>
+          <input id="mobile"
+                 matInput
+                 formControlName="mobile"
+                 placeholder="Mobile" />
+        </mat-form-field>
+        <mat-form-field>
+          <input id="company"
+                 matInput
+                 formControlName="company"
+                 placeholder="Company" />
+        </mat-form-field>
+        <mat-form-field>
+        <input id="industry"
+               matInput
+               formControlName="industry"
+               [(ngModel)] ="user.industry"
+               placeholder="Industry" />
+        </mat-form-field>
+        <mat-form-field>
+        <input id="attachment"
+               matInput
+               formControlName="attachment"
+               [(ngModel)] ="user.attachment"
+               placeholder="attachment" />
+        </mat-form-field>
+
+
+
+      </div>
+    </form>
+  </div>
+</div>
